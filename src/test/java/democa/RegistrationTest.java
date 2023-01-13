@@ -4,48 +4,67 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationTest {
 
     @BeforeAll
-    static void beforeAll ()
-    {
+    static void beforeAll() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-  //      Configuration.holdBrowserOpen=true;
+        //      Configuration.holdBrowserOpen=true;
     }
 
     @Test
-    void succesfulRegistrationTest () {
+    void succesfulRegistrationTest() {
 
-            open("/automation-practice-form");
-            $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
-            executeJavaScript("$('#fixedban').remove()");
-            executeJavaScript("$('footer').remove()");
+        String firstName = "Ruslan";
+        String lastName = "Ivanov";
+        String userEmail = "gmail08@ya.ru";
+        String gender = "Male";
+        String userPhone = "9376431608";
+        String subject = "Math";
+        String hobbies = "Reading";
+        String userAddress = "443031 st Gagarina 15-10";
+        String state = "Haryana";
+        String city = "Karnal";
+
+        open("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
 
 
-        $("#firstName").setValue("Ruslan");
-        $("#lastName").setValue("Ivanov");
-        $("#userEmail").setValue("gmail08@ya.ru");
-        $("#genterWrapper").$(byText("Male")).click(); // best
-        $("#userNumber").setValue("89376431608");
+        $("#firstName").setValue(firstName);
+        $("#lastName").setValue(lastName);
+        $("#userEmail").setValue(userEmail);
+        $("#genterWrapper").$(byText(gender)).click(); // best
+        $("#userNumber").setValue(userPhone);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption("December");
         $(".react-datepicker__year-select").selectOption("1999");
         $(".react-datepicker__day--017").click();
-        $("#subjectsInput").setValue("Math").pressEnter();
-        $("#hobbiesWrapper").$(byText("Reading")).click();
+        $("#subjectsInput").setValue(subject).pressEnter();
+        $("#hobbiesWrapper").$(byText(hobbies)).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");
-        $("#currentAddress").setValue("443031 st Gagarina 15-10");
+        $("#currentAddress").setValue(userAddress);
         $("#state").click();
         $("#stateCity-wrapper").$(byText("Haryana")).click();
         $("#city").click();
         $("#stateCity-wrapper").$(byText("Karnal")).click();
         $("#submit").click();
+
+        $$(".table-responsive tr").findBy(text("Student Name" + " " + firstName + " " + lastName)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Student Email" + " " + userEmail)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Gender" + " " + gender)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Mobile" + " " + userPhone)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Hobbies" + " " + hobbies)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Address" + " " + userAddress)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("State and City" + " " + state + " " + city)).shouldBe(visible);
+        $$(".table-responsive tr").findBy(text("Subjects" + " " + subject)).shouldBe(visible);
     }
 }
+

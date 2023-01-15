@@ -43,10 +43,7 @@ public class RegistrationTest {
         $("#userEmail").setValue(userEmail);
         $("#genterWrapper").$(byText(gender)).click(); // best
         $("#userNumber").setValue(userPhone);
-        $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOption("December");
-        $(".react-datepicker__year-select").selectOption("1999");
-        $(".react-datepicker__day--017").click();
+
         $("#subjectsInput").setValue(subject).pressEnter();
         $("#hobbiesWrapper").$(byText(hobbies)).click();
         $("#uploadPicture").uploadFromClasspath("img/1.png");

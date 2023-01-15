@@ -1,8 +1,7 @@
-package PageBox;
+package pagebox;
 
-import PageBox.components.CalendarComnponent;
-import PageBox.components.RegistrationResultsModel;
-import com.codeborne.selenide.Selenide;
+import pagebox.components.CalendarComnponent;
+import pagebox.components.RegistrationResultsModel;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
@@ -78,9 +77,9 @@ public class RegistrationPage {
 
     public RegistrationPage setStateCity(String value_state, String value_city) {
         $("#state").click();
-        $("#stateCity-wrapper").$(byText("Haryana")).click();
+        $("#stateCity-wrapper").$(byText(value_state)).click();
         $("#city").click();
-        $("#stateCity-wrapper").$(byText("Karnal")).click();
+        $("#stateCity-wrapper").$(byText(value_city)).click();
         $("#submit").click();
         return this;
     }

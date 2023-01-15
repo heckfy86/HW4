@@ -1,6 +1,4 @@
-package PageBox.components;
-
-import com.codeborne.selenide.Condition;
+package pagebox.components;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;

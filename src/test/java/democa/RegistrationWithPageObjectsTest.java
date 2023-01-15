@@ -1,6 +1,6 @@
 package democa;
 
-import PageBox.RegistrationPage;
+import pagebox.RegistrationPage;
 
 import org.junit.jupiter.api.Test;
 

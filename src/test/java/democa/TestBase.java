@@ -1,6 +1,6 @@
 package democa;
 
-import PageBox.RegistrationPage;
+import pagebox.RegistrationPage;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 

@@ -1,4 +1,4 @@
-package PageBox.components;
+package pagebox.components;
 
 import static com.codeborne.selenide.Selenide.$;
 

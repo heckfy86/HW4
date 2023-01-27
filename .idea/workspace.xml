@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW6_2">
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW9">
+      <change afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.RegistrationTest">
+  <component name="RunManager" selected="Gradle.RegistrationWithFacker">
     <configuration name="RegistrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -62,6 +62,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;democa.RegistrationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationWithFacker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;democa.RegistrationWithFacker&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -96,6 +119,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationWithFacker" />
         <item itemvalue="Gradle.RegistrationTest" />
         <item itemvalue="Gradle.RegistrationWithPageObjectsTest" />
       </list>
@@ -138,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673803901655</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW9">
+      <created>1674840148450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674840148451</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +188,7 @@
     <MESSAGE value="3/44" />
     <MESSAGE value="HW6" />
     <MESSAGE value="HW6_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW6_2" />
+    <MESSAGE value="HW9" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW9" />
   </component>
 </project>

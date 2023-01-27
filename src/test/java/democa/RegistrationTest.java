@@ -22,27 +22,16 @@ public class RegistrationTest {
     @Test
     void succesfulRegistrationTest() {
 
-        Faker faker = new Faker();
-
-        String firstName = faker.name().firstName();
-
-        String lastName = faker.name().lastName();
-        String userEmail = faker.internet().emailAddress();
-        String gender = faker.options().option("Male", "Female", "Other");
-        String userPhone = String.valueOf(faker.number().numberBetween(9370000000L, 9379999999L));
-        String subject = faker.options().option("Literature", "Biology", "Church", "Math");
-        String hobbies = faker.options().option("Reading", "Sports", "Music");
-        String userAddress = faker.address().fullAddress();
-        String state = faker.options().option("NCR", "Uttar Pradesh", "Haryana", "Rajasthan");
-        String city = null;
-        if (state.equals("NCR")) {
-            city = faker.options().option("Delhi", "Gurgaon", "Noida");
-        } else if (state.equals("Uttar Pradesh")) {
-            city = faker.options().option("Agra", "Lucknow", "Merrut");
-        } else if (state.equals("Haryana")) {
-            city = faker.options().option("Karnal", "Panipat");
-        } else if (state.equals("Rajasthan")) {
-            city = faker.options().option("Jaipur", "Jaiselmer");
+        String firstName = "Ruslan";
+        String lastName = "Ivanov";
+        String userEmail = "gmail08@ya.ru";
+        String gender = "Male";
+        String userPhone = "9376431608";
+        String subject = "Math";
+        String hobbies = "Reading";
+        String userAddress = "443031 st Gagarina 15-10";
+        String state = "Haryana";
+        String city = "Karnal";
 
             open("/automation-practice-form");
             $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
@@ -77,5 +66,5 @@ public class RegistrationTest {
         }
 
     }
-}
+
 

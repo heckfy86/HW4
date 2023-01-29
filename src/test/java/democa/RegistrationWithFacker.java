@@ -25,18 +25,17 @@ public class RegistrationWithFacker extends TestBase {
         String userEmail = faker.internet().emailAddress();
         String gender = faker.options().option("Male", "Female", "Other");
         String userPhone = String.valueOf(faker.number().numberBetween(9370000000L, 9379999999L));
-        String subject = faker.options().option("Literature", "Biology", "Church", "Math");
+        String subject = faker.options().option("Civics", "Biology", "Social Studies", "Maths", "English");
         String hobbies = faker.options().option("Reading", "Sports", "Music");
         String userAddress = faker.address().fullAddress();
         String state = faker.options().option("NCR", "Uttar Pradesh", "Haryana", "Rajasthan");
-        System.out.println(state);
         String city = null;
 
         if (state.equals("NCR")) {
             city = faker.options().option("Delhi", "Gurgaon", "Noida");
         }
         if (state.equals("Uttar Pradesh")) {
-            city = faker.options().option("Agra", "Lucknow","Mercut");
+            city = faker.options().option("Agra", "Lucknow","Noida");
         }
         if (state.equals("Haryana")) {
             city = faker.options().option("Karnal", "Panipat");
@@ -63,7 +62,8 @@ public class RegistrationWithFacker extends TestBase {
                 .setHobbies(hobbies)
                 .setUploadPicture(pathPicture)
                 .setAddress(userAddress)
-                .setStateCity(state, city);
+                .setStateCity(state, city)
+                ;
 
 
         registrationPage.verifyResultModalAppear()

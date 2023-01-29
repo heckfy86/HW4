@@ -33,13 +33,13 @@ public class RegistrationWithFacker extends TestBase {
 
         if (state.equals("NCR")) {
             city = faker.options().option("Delhi", "Gurgaon", "Noida");
-        }
+        } else
         if (state.equals("Uttar Pradesh")) {
-            city = faker.options().option("Agra", "Lucknow","Noida");
-        }
+            city = faker.options().option("Agra", "Lucknow","Merrut");
+        } else
         if (state.equals("Haryana")) {
             city = faker.options().option("Karnal", "Panipat");
-        }
+        } else
         if (state.equals("Rajasthan")) {
             city = faker.options().option("Jaipur", "Jaiselmer");
         }

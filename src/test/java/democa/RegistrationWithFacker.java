@@ -1,19 +1,21 @@
 package democa;
 
+import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
+import org.junit.jupiter.api.BeforeAll;
 import pagebox.RegistrationPage;
 
 import org.junit.jupiter.api.Test;
 
 
 public class RegistrationWithFacker extends TestBase {
-    RegistrationPage registrationPage = new RegistrationPage();
+
+     RegistrationPage registrationPage = new RegistrationPage();
+
 
 
     @Test
     void succesfulRegistrationTest() {
-        TestBase.beforeAll();
-
 
         Faker faker = new Faker();
 
@@ -27,48 +29,53 @@ public class RegistrationWithFacker extends TestBase {
         String hobbies = faker.options().option("Reading", "Sports", "Music");
         String userAddress = faker.address().fullAddress();
         String state = faker.options().option("NCR", "Uttar Pradesh", "Haryana", "Rajasthan");
+        System.out.println(state);
         String city = null;
+
         if (state.equals("NCR")) {
             city = faker.options().option("Delhi", "Gurgaon", "Noida");
-        } else if (state.equals("Uttar Pradesh")) {
-            city = faker.options().option("Agra", "Lucknow", "Merrut");
-        } else if (state.equals("Haryana")) {
-            city = faker.options().option("Karnal", "Panipat");
-        } else if (state.equals("Rajasthan")) {
-            city = faker.options().option("Jaipur", "Jaiselmer");
-
-
-            String birthYear = String.valueOf(faker.number().numberBetween(1900, 2022));
-            String birthMonth = faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-            String birthDay = String.format("%02d", faker.number().numberBetween(1, 28));
-            String pathPicture = "img/1.png";
-
-
-            registrationPage.openPage()
-                    .setFirstName(firstName)
-                    .setLastName(lastName)
-                    .setUserNumber(userPhone)
-                    .setEmail(userEmail)
-                    .setGender(gender)
-                    .setBirthDate(birthYear, birthMonth, birthDay)
-                    .setSubjectInput(subject)
-                    .setHobbies(hobbies)
-                    .setUploadPicture(pathPicture)
-                    .setAddress(userAddress)
-                    .setStateCity(state, city);
-
-
-            registrationPage.verifyResultModalAppear()
-                    .verifyResultModal("Student Name", firstName + " " + lastName)
-                    .verifyResultModal("Student Email", userEmail)
-                    .verifyResultModal("Gender", gender)
-                    .verifyResultModal("Mobile", userPhone)
-                    .verifyResultModal("Hobbies", hobbies)
-                    .verifyResultModal("Address", userAddress)
-                    .verifyResultModal("State and City", state + " " + city)
-                    .verifyResultModal("Subjects", subject);
-
         }
+        if (state.equals("Uttar Pradesh")) {
+            city = faker.options().option("Agra", "Lucknow","Mercut");
+        }
+        if (state.equals("Haryana")) {
+            city = faker.options().option("Karnal", "Panipat");
+        }
+        if (state.equals("Rajasthan")) {
+            city = faker.options().option("Jaipur", "Jaiselmer");
+        }
+
+
+        String birthYear = String.valueOf(faker.number().numberBetween(1900, 2022));
+        String birthMonth = faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        String birthDay = String.format("%02d", faker.number().numberBetween(1, 28));
+        String pathPicture = "img/1.png";
+
+
+        registrationPage.openPage()
+                .setFirstName(firstName)
+                .setLastName(lastName)
+                .setUserNumber(userPhone)
+                .setEmail(userEmail)
+                .setGender(gender)
+                .setBirthDate(birthYear, birthMonth, birthDay)
+                .setSubjectInput(subject)
+                .setHobbies(hobbies)
+                .setUploadPicture(pathPicture)
+                .setAddress(userAddress)
+                .setStateCity(state, city);
+
+
+        registrationPage.verifyResultModalAppear()
+                .verifyResultModal("Student Name", firstName + " " + lastName)
+                .verifyResultModal("Student Email", userEmail)
+                .verifyResultModal("Gender", gender)
+                .verifyResultModal("Mobile", userPhone)
+                .verifyResultModal("Hobbies", hobbies)
+                .verifyResultModal("Address", userAddress)
+                .verifyResultModal("State and City", state + " " + city)
+                .verifyResultModal("Subjects", subject);
+
     }
 }
 

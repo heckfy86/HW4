@@ -9,11 +9,9 @@ import pagebox.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
 @Tag("1")
-public class RegistrationWithFacker extends TestBase {
+public class RegistrationWithFacker extends TestBaseExtended {
 
-    RegistrationPageDemoca registrationPage = new RegistrationPageDemoca();
-
-
+    RegistrationPage registrationPage = new RegistrationPage();
     @Test
     void succesfulRegistrationTest() {
 

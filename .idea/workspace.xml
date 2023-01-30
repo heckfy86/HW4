@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_2">
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_3">
+      <change afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationPageDemoca.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675074034019</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="HW10_3">
+      <created>1675074699005</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675074699005</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +282,7 @@
     <MESSAGE value="HW10" />
     <MESSAGE value="HW10_1" />
     <MESSAGE value="HW10_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_2" />
+    <MESSAGE value="HW10_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_3" />
   </component>
 </project>

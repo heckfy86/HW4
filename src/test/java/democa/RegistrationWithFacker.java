@@ -3,15 +3,15 @@ package democa;
 import com.codeborne.selenide.Configuration;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import pagebox.RegistrationPage;
 
 import org.junit.jupiter.api.Test;
 
-
+@Tag("1")
 public class RegistrationWithFacker extends TestBase {
 
-     RegistrationPage registrationPage = new RegistrationPage();
-
+    RegistrationPage registrationPage = new RegistrationPage();
 
 
     @Test
@@ -33,14 +33,11 @@ public class RegistrationWithFacker extends TestBase {
 
         if (state.equals("NCR")) {
             city = faker.options().option("Delhi", "Gurgaon", "Noida");
-        } else
-        if (state.equals("Uttar Pradesh")) {
-            city = faker.options().option("Agra", "Lucknow","Merrut");
-        } else
-        if (state.equals("Haryana")) {
+        } else if (state.equals("Uttar Pradesh")) {
+            city = faker.options().option("Agra", "Lucknow", "Merrut");
+        } else if (state.equals("Haryana")) {
             city = faker.options().option("Karnal", "Panipat");
-        } else
-        if (state.equals("Rajasthan")) {
+        } else if (state.equals("Rajasthan")) {
             city = faker.options().option("Jaipur", "Jaiselmer");
         }
 
@@ -63,7 +60,7 @@ public class RegistrationWithFacker extends TestBase {
                 .setUploadPicture(pathPicture)
                 .setAddress(userAddress)
                 .setStateCity(state, city)
-                ;
+        ;
 
 
         registrationPage.verifyResultModalAppear()

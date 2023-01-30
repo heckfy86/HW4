@@ -33,7 +33,7 @@ public class RegistrationTest {
         String state = "Haryana";
         String city = "Karnal";
 
-            open("/automation-practice-form");
+            open("https://demoqa.com/automation-practice-form");
             $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
             executeJavaScript("$('#fixedban').remove()");
             executeJavaScript("$('footer').remove()");

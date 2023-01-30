@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_5">
-      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" afterDir="false" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675081944473</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="HW10_6">
+      <created>1675082226248</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675082226248</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +304,7 @@
     <MESSAGE value="HW10_3" />
     <MESSAGE value="HW10_4" />
     <MESSAGE value="HW10_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_5" />
+    <MESSAGE value="HW10_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_6" />
   </component>
 </project>

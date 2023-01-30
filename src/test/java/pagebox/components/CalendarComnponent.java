@@ -1,7 +1,10 @@
 package pagebox.components;
 
+import org.junit.jupiter.api.Tag;
+
 import static com.codeborne.selenide.Selenide.$;
 
+@Tag("1")
 public class CalendarComnponent {
 
     public void setDate(String year, String month, String day) {

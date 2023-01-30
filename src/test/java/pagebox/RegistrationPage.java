@@ -1,5 +1,6 @@
 package pagebox;
 
+import org.junit.jupiter.api.Tag;
 import pagebox.components.CalendarComnponent;
 import pagebox.components.RegistrationResultsModel;
 import com.codeborne.selenide.SelenideElement;
@@ -8,7 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
-
+@Tag("1")
 public class RegistrationPage {
 
     private final static String TITLE_TEXT = "Student Registration Form";

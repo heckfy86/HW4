@@ -20,8 +20,7 @@ public class RegistrationTest {
     }
 
     @Test
-    @Tag("1")
-    void succesfulRegistrationTest() {
+      void succesfulRegistrationTest() {
 
         String firstName = "Ruslan";
         String lastName = "Ivanov";

@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 @Tag("1")
 public class RegistrationWithFacker extends TestBaseExtended {
 
-    RegistrationPage registrationPage = new RegistrationPage();
+    RegistrationPageExterned registrationPage = new RegistrationPageExterned();
     @Test
     void succesfulRegistrationTest() {
 

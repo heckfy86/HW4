@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 
 public class RegistrationWithPageObjectsTest extends TestBase {
-    RegistrationPageDemoca registrationPage = new RegistrationPageDemoca();
+    RegistrationPageExterned registrationPage = new RegistrationPageExterned();
 
 
     @Test

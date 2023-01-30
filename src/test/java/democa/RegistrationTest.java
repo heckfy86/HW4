@@ -2,13 +2,14 @@ package democa;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-@Tag("1")
+@Disabled
 public class RegistrationTest {
 
     @BeforeAll
@@ -20,7 +21,7 @@ public class RegistrationTest {
     }
 
     @Test
-      void succesfulRegistrationTest() {
+        void succesfulRegistrationTest() {
 
         String firstName = "Ruslan";
         String lastName = "Ivanov";

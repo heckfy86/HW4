@@ -32,16 +32,37 @@ test {
     useJUnitPlatform{}
 }
 
-task democa_test(type: Test) {
+task democa_chrome_99(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("1","2")
+        includeTags("facker","chrome_99")
+    }
+}
+
+task democa_chrome_100(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("facker","chrome_100")
+    }
+}
+
+task democa_firefox_97(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("facker","firefox_97")
+    }
+}
+
+task democa_firefox_98(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("facker","firefox_98")
     }
 }
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.10.3",
+            "com.codeborne:selenide:6.9.0",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter:5.9.1",

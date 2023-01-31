@@ -8,7 +8,7 @@ import pagebox.RegistrationPage;
 
 import org.junit.jupiter.api.Test;
 
-@Tag("1")
+@Tag("facker")
 public class RegistrationWithFacker extends TestBaseExtended {
 
     RegistrationPageExterned registrationPage = new RegistrationPageExterned();
@@ -43,7 +43,7 @@ public class RegistrationWithFacker extends TestBaseExtended {
         String birthYear = String.valueOf(faker.number().numberBetween(1900, 2022));
         String birthMonth = faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
         String birthDay = String.format("%02d", faker.number().numberBetween(1, 28));
-        String pathPicture = "img/1.png";
+        //  String pathPicture = "img/1.png";
 
 
         registrationPage.openPage()
@@ -55,7 +55,7 @@ public class RegistrationWithFacker extends TestBaseExtended {
                 .setBirthDate(birthYear, birthMonth, birthDay)
                 .setSubjectInput(subject)
                 .setHobbies(hobbies)
-                .setUploadPicture(pathPicture)
+                //.setUploadPicture(pathPicture)
                 .setAddress(userAddress)
                 .setStateCity(state, city)
         ;
@@ -70,7 +70,6 @@ public class RegistrationWithFacker extends TestBaseExtended {
                 .verifyResultModal("Address", userAddress)
                 .verifyResultModal("State and City", state + " " + city)
                 .verifyResultModal("Subjects", subject);
-
     }
 }
 

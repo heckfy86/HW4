@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_10">
-      <change afterPath="$PROJECT_DIR$/src/test/java/properties/SystemProperties.java" afterDir="false" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithPageObjectsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithPageObjectsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,7 @@
       <recent name="democa" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.HW4 [allureReport]">
+  <component name="RunManager" selected="Gradle.RegistrationWithFacker">
     <configuration name="HW4 [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -211,9 +211,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationWithFacker" />
         <item itemvalue="Gradle.HW4 [allureReport]" />
         <item itemvalue="Gradle.RegistrationTest" />
-        <item itemvalue="Gradle.RegistrationWithFacker" />
         <item itemvalue="Gradle.RegistrationWithFacker.succesfulRegistrationTest" />
         <item itemvalue="Gradle.RegistrationWithPageObjectsTest" />
       </list>
@@ -368,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675087592116</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="HW10_11">
+      <created>1675189261645</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1675189261645</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,6 +410,7 @@
     <MESSAGE value="HW10_8" />
     <MESSAGE value="HW10_9" />
     <MESSAGE value="HW10_10" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_10" />
+    <MESSAGE value="HW10_11" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_11" />
   </component>
 </project>

@@ -13,11 +13,11 @@ import pagebox.RegistrationPage;
 
 import java.util.Map;
 
-@Tag("1")
+
 public class TestBaseExtended {
 
     RegistrationPage registrationPage = new RegistrationPage();
-
+    @Tag("3")
     @BeforeAll
     static void beforeAll() {
 
@@ -26,6 +26,29 @@ public class TestBaseExtended {
         Configuration.browserVersion = "100.0";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+
+        String browserName = System.getProperty("browsers","firefox");
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
+
+        Configuration.browserCapabilities = capabilities;
+    }
+
+    @BeforeAll
+    @Tag("2")
+    static void beforeAll_2() {
+
+        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.browser = "firefox";
+        Configuration.browserVersion = "97.0";
+        Configuration.browserSize = "1920x1080";
+       Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+
+        //String browserName = System.getProperty("browsers","firefox");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

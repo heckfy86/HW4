@@ -33,8 +33,9 @@ test {
 }
 
 task democa_test(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("1")
+        includeTags("1","2")
     }
 }
 

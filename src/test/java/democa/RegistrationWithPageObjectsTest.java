@@ -1,7 +1,5 @@
 package democa;
 
-import pagebox.RegistrationPage;
-
 import org.junit.jupiter.api.Test;
 
 

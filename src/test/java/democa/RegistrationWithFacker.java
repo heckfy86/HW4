@@ -43,7 +43,7 @@ public class RegistrationWithFacker extends TestBaseExtended {
         String birthYear = String.valueOf(faker.number().numberBetween(1900, 2022));
         String birthMonth = faker.options().option("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
         String birthDay = String.format("%02d", faker.number().numberBetween(1, 28));
-          String pathPicture = "src/test/resources/img/1.png";
+          String pathPicture = "img/1.png";
 
 
         registrationPage.openPage()

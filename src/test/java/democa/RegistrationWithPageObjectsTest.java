@@ -25,7 +25,7 @@ public class RegistrationWithPageObjectsTest extends TestBaseExtended {
         String birthYear = "1999";
         String birthMonth = "December";
         String birthDay = "17";
-        String pathPicture="img/1.png";
+        String pathPicture="src/test/resources/img/1.png";
 
 
 

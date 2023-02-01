@@ -19,7 +19,7 @@ public class TestBaseExtended {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
-
+@BeforeEach
     @Tag("chrome_99")
     void beforeAll_chrome_99() {
 
@@ -31,7 +31,7 @@ public class TestBaseExtended {
         capabilities();
     }
 
-
+    @BeforeEach
     @Tag("chrome_100")
     void beforeAll_chrome_100() {
 
@@ -42,7 +42,7 @@ public class TestBaseExtended {
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         capabilities();
     }
-
+    @BeforeEach
 
     @Tag("firefox_97")
     void beforeAll_firefox_97() {
@@ -55,7 +55,7 @@ public class TestBaseExtended {
         capabilities();
     }
 
-
+    @BeforeEach
     @Tag("firefox_98")
     void beforeAll_firefox_98() {
 

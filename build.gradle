@@ -50,7 +50,7 @@ task democa_chrome_100(type: Test) {
 task democa_firefox_97(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("firefox_97","facker")
+        includeTags("facker")
         excludeTags("chrome_100", "chrome_99")
     }
 }

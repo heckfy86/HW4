@@ -20,9 +20,8 @@ public class TestBaseExtended {
     RegistrationPage registrationPage = new RegistrationPage();
 
 
-
     @Tag("chrome_99")
-    static void beforeAll_chrome_99() {
+    void beforeAll_chrome_99() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";
@@ -34,11 +33,11 @@ public class TestBaseExtended {
 
 
     @Tag("chrome_100")
-    static void beforeAll_chrome_100() {
+    void beforeAll_chrome_100() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "99.0";
+        Configuration.browserVersion = "100.0";
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         capabilities();
@@ -46,7 +45,7 @@ public class TestBaseExtended {
 
 
     @Tag("firefox_97")
-     void beforeAll_firefox_97() {
+    void beforeAll_firefox_97() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "firefox";
@@ -58,7 +57,7 @@ public class TestBaseExtended {
 
 
     @Tag("firefox_98")
-     void beforeAll_firefox_98() {
+    void beforeAll_firefox_98() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";
@@ -82,7 +81,7 @@ public class TestBaseExtended {
     }
 
 
-    static void capabilities() {
+    void capabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

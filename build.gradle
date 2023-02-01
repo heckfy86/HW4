@@ -35,28 +35,33 @@ test {
 task democa_chrome_99(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("facker","chrome_99")
+        includeTags("chrome_99")
     }
 }
 
 task democa_chrome_100(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("facker","chrome_100")
+        includeTags("chrome_100")
     }
 }
 
 task democa_firefox_97(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("facker","firefox_97")
+        includeTags("firefox_97")
     }
 }
-
 task democa_firefox_98(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("facker","firefox_98")
+        includeTags("firefox_98")
+    }
+
+task democa_facker(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("facker")
     }
 }
 
@@ -70,3 +75,4 @@ dependencies {
     )
 }
 
+6

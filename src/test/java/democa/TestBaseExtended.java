@@ -44,9 +44,9 @@ public class TestBaseExtended {
         capabilities();
     }
 
-    @BeforeAll
+    @BeforeEach
     @Tag("firefox_97")
-    static void beforeAll_firefox_97() {
+     void beforeAll_firefox_97() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "firefox";
@@ -56,9 +56,9 @@ public class TestBaseExtended {
         capabilities();
     }
 
-    @BeforeAll
+    @BeforeEach
     @Tag("firefox_98")
-    static void beforeAll_firefox_98() {
+     void beforeAll_firefox_98() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";

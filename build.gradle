@@ -35,7 +35,7 @@ test {
 task democa_chrome_99(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("chrome_99")
+        includeTags("facker","chrome_99")
     }
 }
 
@@ -49,7 +49,7 @@ task democa_chrome_100(type: Test) {
 task democa_firefox_97(type: Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform {
-        includeTags("firefox_97")
+        includeTags("facker","firefox_97")
     }
 }
 task democa_firefox_98(type: Test) {

@@ -20,7 +20,7 @@ public class TestBaseExtended {
     RegistrationPage registrationPage = new RegistrationPage();
 
 
-    @BeforeAll
+
     @Tag("chrome_99")
     static void beforeAll_chrome_99() {
 
@@ -32,7 +32,7 @@ public class TestBaseExtended {
         capabilities();
     }
 
-    @BeforeAll
+
     @Tag("chrome_100")
     static void beforeAll_chrome_100() {
 
@@ -44,7 +44,7 @@ public class TestBaseExtended {
         capabilities();
     }
 
-    @BeforeEach
+
     @Tag("firefox_97")
      void beforeAll_firefox_97() {
 
@@ -56,7 +56,7 @@ public class TestBaseExtended {
         capabilities();
     }
 
-    @BeforeEach
+
     @Tag("firefox_98")
      void beforeAll_firefox_98() {
 

@@ -22,7 +22,7 @@ public class TestBaseExtended {
 
     @BeforeAll
     @Tag("chrome_99")
-    static void beforeAll() {
+    static void beforeAll_chrome_99() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";

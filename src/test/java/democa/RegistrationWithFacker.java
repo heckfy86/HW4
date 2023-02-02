@@ -6,12 +6,14 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import pagebox.RegistrationPage;
 
+
 import org.junit.jupiter.api.Test;
 
 @Tag("facker")
 public class RegistrationWithFacker extends TestBaseExtended {
 
     RegistrationPageExterned registrationPage = new RegistrationPageExterned();
+
     @Test
     void succesfulRegistrationTest() {
 

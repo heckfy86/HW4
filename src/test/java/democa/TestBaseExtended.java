@@ -24,11 +24,12 @@ public class TestBaseExtended {
    static void beforeAll_choice() {
 
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = System.getProperty("browserName","chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion","100");
+        Configuration.browser = System.getProperty("browserName","Chrome" );
+        Configuration.browserVersion = System.getProperty("browserVersion","100.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         capabilities();
+
     }
 
     @BeforeAll
@@ -40,6 +41,8 @@ public class TestBaseExtended {
         Configuration.browserSize = "1920x1080";
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         capabilities();
+
+
     }
 
     @BeforeEach
@@ -58,6 +61,7 @@ public class TestBaseExtended {
 
     static void capabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
 
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,

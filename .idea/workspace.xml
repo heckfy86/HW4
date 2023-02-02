@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_30">
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_31">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -490,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675337944708</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="HW10_31">
+      <created>1675338328465</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675338328465</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10_4" />
     <MESSAGE value="HW10_5" />
     <MESSAGE value="HW10_6" />
     <MESSAGE value="HW10_7" />
@@ -530,6 +539,7 @@
     <MESSAGE value="HW10_28" />
     <MESSAGE value="HW10_29" />
     <MESSAGE value="HW10_30" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_30" />
+    <MESSAGE value="HW10_31" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_31" />
   </component>
 </project>

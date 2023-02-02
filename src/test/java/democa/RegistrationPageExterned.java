@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Tag;
 import pagebox.components.CalendarComnponent;
 import pagebox.components.RegistrationResultsModel;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -34,6 +36,8 @@ public class RegistrationPageExterned {
 
         return this;
     }
+
+
 
     public RegistrationPageExterned setLastName(String value) {
         lastNameInput.setValue(value);
@@ -67,8 +71,8 @@ public class RegistrationPageExterned {
         return this;
     }
 
-    public RegistrationPageExterned setUploadPicture(String value) {
-        $("#uploadPicture").uploadFromClasspath(value);
+    public RegistrationPageExterned setUploadPicture(File value) {
+        $("#uploadPicture").uploadFile(value);
         return this;
     }
     public RegistrationPageExterned setAddress(String value) {

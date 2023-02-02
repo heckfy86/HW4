@@ -2,6 +2,7 @@ package democa;
 
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 
 
 public class RegistrationWithPageObjectsTest extends TestBaseExtended {
@@ -25,8 +26,8 @@ public class RegistrationWithPageObjectsTest extends TestBaseExtended {
         String birthYear = "1999";
         String birthMonth = "December";
         String birthDay = "17";
-        String pathPicture="src/test/resources/img/1.png";
-
+        //String pathPicture="src/test/resources/img/1.png";
+        File picture = new File("src/test/resources/1.png");
 
 
         registrationPage.openPage()
@@ -38,7 +39,7 @@ public class RegistrationWithPageObjectsTest extends TestBaseExtended {
                 .setBirthDate(birthYear, birthMonth, birthDay)
                 .setSubjectInput(subject)
                 .setHobbies(hobbies)
-                .setUploadPicture(pathPicture)
+                .setUploadPicture(picture)
                 .setAddress(userAddress)
                 .setStateCity(state,city);
 

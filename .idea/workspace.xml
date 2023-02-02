@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_33">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_34">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationPageExterned.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationPageExterned.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/RegistrationWithFacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/properties/SystemProperties.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -511,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675340365935</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="HW10_34">
+      <created>1675340703599</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1675340703599</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10_7" />
     <MESSAGE value="HW10_8" />
     <MESSAGE value="HW10_9" />
     <MESSAGE value="HW10_10" />
@@ -551,6 +562,7 @@
     <MESSAGE value="HW10_31" />
     <MESSAGE value="HW10_32" />
     <MESSAGE value="HW10_33" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_33" />
+    <MESSAGE value="HW10_34" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_34" />
   </component>
 </project>

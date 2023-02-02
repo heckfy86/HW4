@@ -7,8 +7,11 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import pagebox.RegistrationPage;
 
@@ -18,6 +21,7 @@ import java.util.Map;
 public class TestBaseExtended {
 
     RegistrationPage registrationPage = new RegistrationPage();
+    private RemoteWebDriver driver;
 
 @BeforeAll
 @Tag("choice")
@@ -29,7 +33,7 @@ public class TestBaseExtended {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         capabilities();
-
+   // WebDriver driver = new FirefoxDriver();
     }
 
     @BeforeAll
@@ -41,6 +45,7 @@ public class TestBaseExtended {
         Configuration.browserSize = "1920x1080";
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         capabilities();
+
 
 
     }

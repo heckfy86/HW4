@@ -21,7 +21,7 @@ public class TestBaseExtended {
 
 @BeforeAll
     @Tag("choice")
-    void beforeAll_choice() {
+   static void beforeAll_choice() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = System.getProperty("browserName","chrome");
@@ -32,7 +32,7 @@ public class TestBaseExtended {
     }
 
     @BeforeAll
-    void beforeAll() {
+    static void beforeAll() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";
@@ -56,7 +56,7 @@ public class TestBaseExtended {
     }
 
 
-    void capabilities() {
+    static void capabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

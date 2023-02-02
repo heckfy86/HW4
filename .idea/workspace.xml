@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_32" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_33">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -502,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675340092371</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="HW10_33">
+      <created>1675340365935</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1675340365935</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10_6" />
     <MESSAGE value="HW10_7" />
     <MESSAGE value="HW10_8" />
     <MESSAGE value="HW10_9" />
@@ -542,6 +550,7 @@
     <MESSAGE value="HW10_30" />
     <MESSAGE value="HW10_31" />
     <MESSAGE value="HW10_32" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_32" />
+    <MESSAGE value="HW10_33" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_33" />
   </component>
 </project>

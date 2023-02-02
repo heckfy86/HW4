@@ -53,7 +53,7 @@ task democa_choice(type: Test) {
                 "com.github.javafaker:javafaker:1.0.2",
                 "org.junit.jupiter:junit-jupiter:5.9.1",
                 "org.slf4j:slf4j-simple:$slf4jVersion",
-            "org.seleniumhq.selenium:selenium-firefox-driver:4.8.0"
+
         )
     }
 

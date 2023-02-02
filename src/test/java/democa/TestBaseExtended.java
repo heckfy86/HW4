@@ -19,51 +19,26 @@ public class TestBaseExtended {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
-@BeforeEach
-    @Tag("chrome_99")
-    void beforeAll_chrome_99() {
+@BeforeAll
+    @Tag("choice")
+    void beforeAll_choice() {
 
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
+        Configuration.browser = System.getProperty("browserName","chrome");
+        Configuration.browserVersion = System.getProperty("browserVersion","100");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         capabilities();
     }
 
-    @BeforeEach
-    @Tag("chrome_100")
-    void beforeAll_chrome_100() {
+    @BeforeAll
+    void beforeAll() {
 
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.browserSize = "1920x1080";
         Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        capabilities();
-    }
-    @BeforeEach
-
-    @Tag("firefox_97")
-    void beforeAll_firefox_97() {
-
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "firefox";
-        Configuration.browserVersion = "97.0";
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        capabilities();
-    }
-
-    @BeforeEach
-    @Tag("firefox_98")
-    void beforeAll_firefox_98() {
-
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         capabilities();
     }
 

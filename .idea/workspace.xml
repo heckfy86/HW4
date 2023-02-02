@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_26" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_27">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/democa/TestBaseExtended.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +65,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="remotly" />
+        <entry key="$PROJECT_DIR$" value="properties" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -460,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675242291582</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="HW10_27">
+      <created>1675242524975</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675242524975</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,7 +486,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10" />
     <MESSAGE value="HW10_1" />
     <MESSAGE value="HW10_2" />
     <MESSAGE value="HW10_3" />
@@ -500,6 +510,7 @@
     <MESSAGE value="HW10_23" />
     <MESSAGE value="HW10_25" />
     <MESSAGE value="HW10_26" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_26" />
+    <MESSAGE value="HW10_27" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_27" />
   </component>
 </project>

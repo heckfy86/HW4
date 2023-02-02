@@ -20,7 +20,7 @@ public class TestBaseExtended {
     RegistrationPage registrationPage = new RegistrationPage();
 
 @BeforeAll
-    @Tag("choice")
+
    static void beforeAll_choice() {
 
         Configuration.baseUrl = "https://demoqa.com";
@@ -32,6 +32,7 @@ public class TestBaseExtended {
     }
 
     @BeforeAll
+    @Tag("choice")
     static void beforeAll() {
 
         Configuration.baseUrl = "https://demoqa.com";

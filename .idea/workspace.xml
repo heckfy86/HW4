@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_28" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_29" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -474,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675336860665</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="HW10_29">
+      <created>1675337490245</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675337490245</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10_2" />
     <MESSAGE value="HW10_3" />
     <MESSAGE value="HW10_4" />
     <MESSAGE value="HW10_5" />
@@ -514,6 +520,7 @@
     <MESSAGE value="HW10_26" />
     <MESSAGE value="HW10_27" />
     <MESSAGE value="HW10_28" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_28" />
+    <MESSAGE value="HW10_29" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_29" />
   </component>
 </project>

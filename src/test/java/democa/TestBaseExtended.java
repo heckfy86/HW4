@@ -8,6 +8,8 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -15,40 +17,29 @@ import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import pagebox.RegistrationPage;
 
+import java.io.File;
 import java.util.Map;
 
 
 public class TestBaseExtended {
 
     RegistrationPage registrationPage = new RegistrationPage();
-    private RemoteWebDriver driver;
+    private static RemoteWebDriver driver;
 
 @BeforeAll
 @Tag("choice")
    static void beforeAll_choice() {
 
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = System.getProperty("browserName","Chrome" );
-        Configuration.browserVersion = System.getProperty("browserVersion","100.0");
+        Configuration.browser = System.getProperty("browserName","firefox" );
+        Configuration.browserVersion = System.getProperty("browserVersion","97.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         capabilities();
-   // WebDriver driver = new FirefoxDriver();
-    }
 
-    @BeforeAll
-    static void beforeAll() {
-
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
-        Configuration.browserSize = "1920x1080";
-        Configuration.remote = System.getProperty("remote_url", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        capabilities();
+}
 
 
-
-    }
 
     @BeforeEach
     void AddListener() {

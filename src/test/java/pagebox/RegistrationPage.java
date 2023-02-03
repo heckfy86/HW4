@@ -71,6 +71,8 @@ public class RegistrationPage {
         $("#uploadPicture").uploadFromClasspath(value);
         return this;
     }
+
+
     public RegistrationPage setAddress(String value) {
         $("#currentAddress").setValue(value);
         return this;

@@ -53,6 +53,7 @@ task democa_choice(type: Test) {
                 "com.github.javafaker:javafaker:1.0.2",
                 "org.junit.jupiter:junit-jupiter:5.9.1",
                 "org.slf4j:slf4j-simple:$slf4jVersion",
+                "org.selenide:selenide-selenoid:2.3.5"
 
         )
     }

@@ -75,6 +75,8 @@ public class RegistrationPageExterned {
         $("#uploadPicture").uploadFile(value);
         return this;
     }
+
+
     public RegistrationPageExterned setAddress(String value) {
         $("#currentAddress").setValue(value);
         return this;

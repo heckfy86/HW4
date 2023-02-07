@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_37">
-      <change afterPath="$PROJECT_DIR$/notifications/allure-notifications-4.2.1.jar" afterDir="false" />
+    <list default="true" id="ab11141c-2416-4023-a522-19c87530fca3" name="Changes" comment="HW10_38">
       <change afterPath="$PROJECT_DIR$/notifications/config.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/notifications/draft.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -66,7 +65,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="properties" />
+        <entry key="$PROJECT_DIR$" value="choice" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -548,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675429760659</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="HW10_38">
+      <created>1675780935083</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1675780935083</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HW10_11" />
     <MESSAGE value="HW10_13" />
     <MESSAGE value="HW10_14" />
     <MESSAGE value="HW10_15" />
@@ -588,6 +593,7 @@
     <MESSAGE value="HW10_35" />
     <MESSAGE value="HW10_36" />
     <MESSAGE value="HW10_37" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW10_37" />
+    <MESSAGE value="HW10_38" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW10_38" />
   </component>
 </project>
